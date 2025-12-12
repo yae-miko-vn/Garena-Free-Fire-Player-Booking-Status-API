@@ -1125,13 +1125,3 @@ def Clear_Approvs():
 load_blacklist() ; encrypt_uids()    
 load_approve() ; encrypt_uids2()   
 like_data_clan , like_data , room_data = L_DaTa()
-
-#FIX AND LEAKED BY NR CODEX AKA NILAY
-
-
-#GIVE TE REAL CREDITS TO THE REAL OWNER
-
-#JOIN FOR MORE CODES AND LEAKED 
-#TG CHANNEL @NR_CODEX
-#YT CHANNEL @NR_CODEX06
-#IG FOLLOW US @NR_CODEX
