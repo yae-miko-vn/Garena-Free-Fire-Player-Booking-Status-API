@@ -1,21 +1,4 @@
 
-#FIX AND LEAKED BY NR CODEX AKA NILAY
-
-
-#GIVE TE REAL CREDITS TO THE REAL OWNER
-
-#JOIN FOR MORE CODES AND LEAKED 
-#TG CHANNEL @NR_CODEX
-#YT CHANNEL @NR_CODEX06
-#IG FOLLOW US @NR_CODEX
-
-#CHANGE ACCORDING YOUR SERVER URLS AND LOGIN
-
-
-
-
-
-
 from flask import Flask, request, jsonify
 from SpamReqInvApiMain import *
 from SpamReqInvApiSetting import *
@@ -477,7 +460,7 @@ class TcpBotConnectMain:
 
                 self.id = team_code
                 self.nm = account_name
-                print(f"[{self.account_id}] Executing /bngx for team code {self.id} with name {self.nm}")
+                print(f"[{self.account_id}] Executing /miko for team code {self.id} with name {self.nm}")
 
                 # Master account logic
                 if self.account_id == MASTER_ACCOUNT_ID:
@@ -552,7 +535,7 @@ class TcpBotConnectMain:
                 if not self.socket_client or not self.is_socket_connected(self.socket_client):
                     return "Socket not connected, please wait for connection..."
                 
-                # Parse custom command: /nr=[teamcode]&[ghostname]
+                # Parse custom command: /nr=[teamcode]&[Booking Player Name]
                 parts = command[4:].split('&', 1)
                 if len(parts) < 2:
                     return "Invalid format. Use: /nr=[teamcode]&[ghostname]"
@@ -739,7 +722,7 @@ def execute_command_all():
     if command.startswith('/nr='):
         parts = command[4:].split('&', 1)
         if len(parts) < 2:
-            return jsonify({'error': 'Invalid /nr format. Use: /nr=[teamcode]&[ghostname]'}), 400
+            return jsonify({'error': 'Invalid /nr format. Use: /nr=[teamcode]&[Booking Player Name]'}), 400
         
         team_code = parts[0]
         ghost_name = parts[1]
@@ -758,20 +741,20 @@ def execute_command_all():
             result = client.execute_command(f"/nr={team_code}&{account_name}")
             results[account_id] = f"{result} | Name: {account_name}"
 
-    # Handle /bngx command
+    # Handle /miko command
     elif "=" in command:
         cmd, arg = command.split("=", 1)
         ghost_names = {
-            "4146829485": "NILAY CODER",
-            "4143498431": "insta: NILAY HERE",
-            "4146769736": "Telegram @NILAY_VII", 
-            "4144498636": "FUCK BY NILAY",
-            "4049472315": "FOLLOW ME GAY"
+            "4146829485": "Dev: Yae Miko",
+            "4143498431": "Insta: @yae.miko.vn",
+            "4146769736": "Discord: @yae.miko.vn", 
+            "4144498636": "TikTok: @yae.miko.vn",
+            "4049472315": "FB Page: @yae.miko.vn"
         }
 
         for account_id, client in clients.items():
             account_name = ghost_names.get(str(account_id), str(account_id))
-            if cmd == "/bngx" and arg:
+            if cmd == "/miko" and arg:
                 result = client.execute_command(cmd, arg, account_name)
                 results[account_id] = f"{result} | Name: {account_name}"
             else:
@@ -791,7 +774,7 @@ def execute_command_all():
 
         for account_id, client in clients.items():
             account_name = ghost_names.get(str(account_id), str(account_id))
-            if cmd == "/bngx" and arg:
+            if cmd == "/miko" and arg:
                 result = client.execute_command(cmd, arg, account_name)
                 results[account_id] = f"{result} | Name: {account_name}"
             else:
@@ -809,7 +792,7 @@ def custom_nr_command():
     ghostname = request.args.get('ghostname')
 
     if not teamcode or not ghostname:
-        return jsonify({'error': 'teamcode and ghostname parameters are required'}), 400
+        return jsonify({'error': 'teamcode and Booking Player Name parameters are required'}), 400
 
     results = {}
     
@@ -864,13 +847,4 @@ if __name__ == "__main__":
         print("Server stopped by user")
         cleanup()
         
-
-#FIX AND LEAKED BY NR CODEX AKA NILAY
-
-
-#GIVE TE REAL CREDITS TO THE REAL OWNER
-
-#JOIN FOR MORE CODES AND LEAKED 
-#TG CHANNEL @NR_CODEX
-#YT CHANNEL @NR_CODEX06
-#IG FOLLOW US @NR_CODEX        
+  
